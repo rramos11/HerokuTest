@@ -1,4 +1,4 @@
-adium-theme-ubuntu==0.3.4
+
 apt-xapian-index==0.45
 chardet==2.0.1
 colorama==0.2.5
@@ -7,7 +7,7 @@ dateutils==0.6.6
 debtagshw==0.1
 defer==1.0.6
 dirspec==13.10
-Django==1.9.2
+Django==1.9.7
 django-extensions==1.4.6
 django-jquery==1.9.1
 duplicity==0.6.23
