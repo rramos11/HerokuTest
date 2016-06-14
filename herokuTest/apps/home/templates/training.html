@@ -1,0 +1,64 @@
+{% extends "emptyLayout.html" %}
+{% load staticfiles %}
+{% block customCSS %}
+	<link href="{% static 'home/css/home.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block mainContent %}
+<div id = "wrapper">
+	<div id = "header" class = "sticky clearfix">
+		{%include "topMenu.html" %}		
+	</div>
+	 <section class="page-header">
+        <div class="container">
+            <h1> Material de apoyo </h1>
+            <ol class="breadcrumb">
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li class="active">Material de apoyo</li>
+        </div>
+    </section>
+	<div class = "container">
+		<section>
+				<article class = "row">
+					<h3>Ya est&aacute;s inscrito en el IntelliSys Challenge. Y ahora ¿Qu&eacute; sigue? </h3>
+					<p>
+						Aprovecha y comienza a entrenarte con el contenido ofrecido por Cincinnatus. 
+
+				A continuaci&oacute;n te presentamos los pasos a seguir para iniciar a aprender. <b>Let’s do this!</b></br>
+				</br>
+				Primero, ve a <a href="https://www.udacity.com">Udacity.com</a> y crea un usuario.
+				</br>
+				Luego, inscr&iacute;bete en la clase <a href="https://www.udacity.com/course/cs101">CS101 - Intro to Computer Science</a> (escog&iacute;endo la opci&oacute;n 'Access Course Materials')</br>
+				Aqu&iacute; te presentamos todos los cursos, en el orden recomendado, tambi&eacute;n de Udacity.com:</p> 
+				<p>
+					<ol>
+						<li>
+							<a href="https://www.udacity.com/course/cs101">CS101 - Introduction to Computer Science</a>
+						</li>
+						<li>
+							<a href="https://www.udacity.com/course/ud036">Programming Foundations with Python</a>
+						</li>
+						<li>
+							<a href="https://www.udacity.com/course/cs253">CS253 - Web Development</a>
+						</li>
+						<li>
+							<a href="https://www.udacity.com/course/cs258">CS258 - Software Testing</a> 
+						</li>
+						<li>
+							<a href="https://www.udacity.com/course/cs215">CS 215 – Algorithms</a>
+						</li>
+					</ol>
+					En caso de cualquier duda o pregunta puedes contactarnos a challenge-team@intellisys.com.do
+					</br>
+					</br>
+					<h4>&iexcl;Good luck!</h2>
+
+					</p>
+				</article>
+		</section>
+	</div>
+	<div id="footer">
+        {% include "footer.html" %}
+    </div>
+</div>
+
+{% endblock %}

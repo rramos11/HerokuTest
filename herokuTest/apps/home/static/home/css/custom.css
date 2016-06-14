@@ -1,0 +1,102 @@
+.body-tag {
+    position: relative;
+}
+
+.footer-wrapper {
+  bottom:0;
+  left:0;
+  position: absolute;
+  right: 0;
+}
+
+html,
+body{
+  height: 100%;
+  position: relative;
+}
+
+#wrapper{
+  position: relative;
+  padding-bottom: 100px; /*Related to footer height*/
+}
+
+/* Hotfix for register page until it gets restructured */
+form#register-form {
+    margin-bottom: 112px;
+}
+
+/* Hotfix for homepage until it gets restructured */
+.home-page section {
+  margin-bottom: 10px;
+}
+
+footer .social-container {
+	margin: auto;
+	width: 120px;
+}
+
+/* How to participate section */
+/*The process-steps class have !important for the a tags; this !important are for override that class*/
+ul.process-steps h5.instructions a,
+ul.process-steps h5.instructions a:hover {
+  border: none !important; 
+  border-radius: 0 !important;
+  background-color: #FFFFFF !important;
+  color: #76AFBB !important;
+  font-size: 14px;
+  height: auto; 
+  width: auto;
+}
+
+.home-page .process-steps .instructions {
+  color: #414141;
+}
+
+ul.process-steps li:before,
+ul.process-steps li:after {
+  border-top: none;
+}
+
+.last-phase {
+  margin-top: 46px;
+}
+
+/*Descriptive section*/
+.home-page #descriptive-section h2 {
+  font-size: 23px;
+  color: #414141;
+}
+
+.home-page #descriptive-section p {
+  font-size: 18px;
+}
+
+/* Contact us page */
+#contact-form,
+form#register-form {
+  margin-top: 50px;
+}
+#contact-form button {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+#contact-form header {
+  padding-left: 30px;
+}
+
+.page-terms-conditions .bold.sub-title{
+	padding-left: 20px;
+	text-transform: uppercase;
+}
+
+.page-terms-conditions .order-list {
+	padding-left: 20px;
+}
+
+/*cronogram*/
+.cronogram h2.col-sm-10 {
+  font-size: 18px;
+  margin-top: 42px;
+  margin-bottom: 0px;
+}

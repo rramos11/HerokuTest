@@ -1,0 +1,71 @@
+{% extends "emptyLayout.html" %}
+{% load staticfiles %}
+{% block mainContent %}
+<div id="wrapper">
+    {% include "topMenu.html" %}
+    <div class="container">
+    <section>
+
+    <div class="row">
+
+        <!-- LOGIN -->
+        <div class="col-md-12">
+
+            <!-- login form -->
+            <form action="#" method="post" class="sky-form boxed col-sm-6 col-sm-offset-3" action="{% url 'login_url'%}">
+                {% csrf_token %}
+                <header class="size-18 margin-bottom-20">
+                    Acceder
+                </header>
+
+                <fieldset class="nomargin">
+                     <span class="input margin-bottom-10">
+                        <span>Ingresa con tu email y contrase&ntilde;a o <a href="{% url 'inscription' %}"><strong>inscríbete</strong></a> si todav&iacute;a no lo has hecho.</span>
+                    </span>
+
+                    <label class="input margin-bottom-10">
+                        <i class="ico-append fa fa-envelope"></i>
+                        <input required="" type="email" placeholder="Correo electr&oacute;nico" name="username" >
+                    </label>
+
+                    <label class="input margin-bottom-10">
+                        <i class="ico-append fa fa-lock"></i>
+                        <input required="" type="password" placeholder="Contrase&ntilde;a"  name="password" >
+                    </label>
+
+                    <div class="clearfix note margin-bottom-30">
+                        <a class="pull-right" href="{% url 'password_reset' %}">¿Olvidaste tu contrase&ntilde;a?</a>
+                    </div>
+
+                    <!-- /login form -->
+                    {% if form.errors %}
+                        <!-- ALERT -->
+                        <div class="alert alert-mini alert-danger margin-bottom-30">
+                            Usuario o clave incorrecto, favor verificar.
+                        </div>
+                        <!-- /ALERT -->
+                    {% endif %}
+                </fieldset>
+
+                <footer>
+                    <button type="submit" class="btn btn-primary noradius pull-right"><i class="fa fa-check"></i> ACCEDER</button>
+                    <input value="{{ next }}"  type="hidden" name="next">
+                </footer>
+
+            </form>
+
+        </div>
+        <!-- /LOGIN -->
+
+    </div>
+</section>
+
+
+</div>
+    {% include "footer.html" %}
+</div>
+{% endblock %}
+
+
+
+

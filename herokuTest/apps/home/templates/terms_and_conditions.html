@@ -1,0 +1,329 @@
+{% extends "emptyLayout.html" %}
+{% load staticfiles %}
+{% block customCSS %}
+<link href="{% static 'home/css/home.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block mainContent %}
+<div id="wrapper" class="page-terms-conditions">
+    <div id="header" class="sticky clearfix">
+        {% include "topMenu.html" %}
+    </div>
+    <section class="page-header">
+        <div class="container">
+            <h1> T&eacute;rminos y condiciones</h1>
+            <ol class="breadcrumb">
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'bases' %}">Bases y T&eacute;rminos</a></li>
+                <li class="active" >T&eacute;rminos y condiciones </li>
+        </div>
+    </section>
+    <div class="container">
+        <section>
+            <article class="row" align="justify" >
+                <p >Los presentes t&eacute;rminos y condiciones aplican a todos los participantes del concurso &ldquo;IntelliSys Challenge&rdquo; (el &ldquo;Concurso&rdquo;), realizado por la sociedad Intellisys D. Corp. (&ldquo;Intellisys
+                    D. Corp.&rdquo; o los &ldquo;Organizadores&rdquo;), con el RNC No.1-31- 02344-4, el cual tiene su domicilio legal en la
+                    Calle Erick Eckman Esquina V&iacute;ctor Thomen No.7, Los Cerros de Gurabo III, Santiago de los Caballeros, Rep&uacute;blica Dominicana. El Concurso ser&aacute; realizado en la Rep&uacute;blica Dominicana durante el per&iacute;odo
+                    del 1ro de Abril del 2016 al 31 de Enero del a&ntilde;o 2017. El Concurso se llevar&aacute; a cabo en conformidad con
+                    los presentes t&eacute;rminos y condiciones, que el participante manifiesta conocer, entender y aceptar sujet&aacute;ndose
+                    a &eacute;stos para todos los efectos y consecuencias legales a que haya lugar.</p>
+
+                <p class="bold sub-title">1. DESCRIPCI&Oacute;N CONCURSO INTELLISYS / CTC</p>
+
+                <p>El Concurso &ldquo;Intellisys Challenge&rdquo; nace de la necesidad de Intellisys D&rsquo; Corp. de
+                    proyectarse en la sociedad dominicana con el prop&oacute;sito de atraer m&aacute;s personas tanto para estudiar en el
+                    Instituto Cincinnatus, como para laborar en la empresa Intellisys D.Corp., en calidad de desarrolladores,
+                    gracias a la creciente demanda de clientes de la entidad. En ese contexto nace la idea de crear un concurso
+                    de programaci&oacute;n enfocado en el desarrollo de una aplicaci&oacute;n o sistema de gesti&oacute;n
+                    empresarial.</p>
+
+                <p>El desaf&iacute;o consistir&aacute; en el desarrollo de un &ldquo;Sistema de Gesti&oacute;n
+                    empresarial de Suplidores&rdquo; que d&eacute; soluci&oacute;n a los requisitos funcionales que se planteen en la descripci&oacute;n del reto a
+                    afrontar por los concursantes, disponible en el portal del concurso: <a href="http://intellisyschallenge.cincinnatus.edu.do/">intellisyschallenge.com</a></p>
+
+                <p>El concurso se dividir&aacute; en tres fases, a saber: a) de desarrollo, b) de aplicaci&oacute;n, y
+                    c) de sistema de gesti&oacute;n empresarial. En cada fase los concursantes deber&aacute;n entregar una versi&oacute;n funcional del
+                    reto en cuesti&oacute;n, e igualmente, en cada una de ellas el jurado del certamen eliminar&aacute; candidatos teniendo en
+                    cuenta los criterios de selecci&oacute;n, especificados en la secci&oacute;n 6 de los presentes t&eacute;rminos
+                    y condiciones, hasta seleccionar una &uacute;nica propuesta ganadora. Aquellos que ofrezcan la mejor soluci&oacute;n
+                    obtendr&aacute;n un &uacute;nico premio monetario conforme a los presentes t&eacute;rminos y condiciones, mientras que los dem&aacute;s concursantes ser&aacute;n tomados en cuenta y evaluados para determinarse la posibilidad de formar
+                    parte de la familia Intellisys como empleados.</p>
+
+                <p class="bold sub-title">2. OBJETIVOS DEL CONCURSO</p>
+
+                <p>Interesar y atraer la mayor cantidad de personas posible para que se dediquen al desarrollo de Software en la Rep&uacute;blica Dominicana, utilizando como plataforma un convenio p&uacute;blico/privado conformado por Intellisys y los Centros Tecnol&oacute;gicos Comunitarios (CTC) de la Rep&uacute;blica
+                    Dominicana.</p>
+
+                <p class="bold sub-title">3. CONDICIONES PARA LA PARTICIPACI&Oacute;N:</p>
+				<ol type="i" class="order-list">
+					<li>Residir en la Rep&uacute;blica Dominicana.</li>
+					<li>Tener entre 18 y 25 a&ntilde;os de edad.<lip>
+					<li>Poseer habilidades referentes al desarrollo de software.<lip>
+					<li>Presentarse como personas f&iacute;sicas y no como empresas o entes dedicadas al desarrollo de
+						software. No pueden participar empleados actuales, representantes, mandatarios y agentes de los organizadores, o cualquier persona profesionalmente involucrada con este concurso. En tal
+						sentido, no pueden participar personas que presten sus servicios como contratistas, suplidores,
+						asalariados, ajusteros o personal intermitente, ni ning&uacute;n otro miembro del personal de los Organizadores.
+						No pueden participar familiares ni relacionados directos de empleados de los organizadores hasta un cuarto grado inclusive.</li>
+				</ol>
+                <p class="bold sub-title">4. PARTICIPANTES Y PERFILES:</p>
+
+                <p>La participaci&oacute;n puede ser individual o grupal, en este &uacute;ltimo caso conformado de un m&aacute;ximo
+                    de 5 personas (en lo adelante el Participante&rdquo; o los &ldquo;Participantes&rdquo;). Todos los
+                    Participantes deben cumplir con las condiciones de participaci&oacute;n establecidas en el presente documento. Deben estar dentro
+                    del perfil de estudiantes, siendo bachilleres, universitarios o no tener m&aacute;s de un a&ntilde;o de
+                    graduado de la universidad graduados de la universidad. En caso de una participaci&oacute;n grupal, cada equipo
+                    debe identificar un representante que, m&aacute;s que el encargado de proyecto, funcione como enlace entre
+                    el equipo participante y los Organizadores.</p>
+
+                <p class="bold sub-title">5. C&Oacute;MO PARTICIPAR:</p>
+
+                <p>El proceso de inscripci&oacute;n del concurso se realizar&aacute; v&iacute;a online, en el portal del
+                    concurso Cincinnatus.edu.do/intellisyschallenge, y estar&aacute; disponible durante dos meses y medio (10
+                    semanas) a partir de la fecha de lanzamiento del evento. Para el registro de los Participantes estar&aacute;
+                    disponible un formulario d&oacute;nde los Participantes ingresar&aacute;n la informaci&oacute;n requerida aceptando
+                    los presentes t&eacute;rminos y condiciones del concurso. El formulario de inscripci&oacute;n estar&aacute;
+                    disponible en el portal del concurso. Luego de estar inscritos, los participantes podr&aacute;n utilizar la modalidad de trabajar
+                    individual o formar grupos de no m&aacute;s de cinco (5) personas. En el portal intellisyschallenge.com se
+                    publicar&aacute;n los requerimientos del Sistema de Gesti&oacute;n Empresarial para que los participantes den inicio al
+                    desarrollo del mismo, de acuerdo a las fases descritas en la secci&oacute;n 9 del presente documento.</p>
+
+                <p class="bold sub-title">6. CRITERIOS PARA EVALUACI&Oacute;N Y SELECCI&Oacute;N DE GANADORES:</p>
+
+                <p>Para determinar la propuesta ganadora el Jurado Calificador tendr&aacute; en cuenta y evaluar&aacute;
+                    el nivel mostrado en los siguientes criterios:</p>
+				<ol type="i" class="order-list">
+					<li><span class="bold">Innovaci&oacute;n</span> &ndash; Se tomar&aacute; en cuenta la capacidad innovadora y diferenciadora de
+						la propuesta.</li>
+					<li><span class="bold">Profesionalidad</span> &ndash; Se evaluar&aacute; la solidez del paquete tecnol&oacute;gico, la
+						arquitectura, dise&ntilde;o, implementaci&oacute;n y el ordenamiento del c&oacute;digo de la propuesta seleccionada.</li>
+					<li><span class="bold">Correcci&oacute;n</span> &ndash; Se tomar&aacute; en cuenta el nivel de cumplimiento de soluci&oacute;n
+						con los requerimientos de la aplicaci</span>&oacute;n dados a los participantes.</li>
+					<li><span class="bold">Experiencia de Usuario</span> &ndash; Se evaluar&aacute; qu&eacute; tan f&aacute;cil y amena ha sido la
+						experiencia del usuario al aplicar la soluci&oacute;n.</li>
+				</ol>
+                <p>La selecci&oacute;n de los ganadores se har&aacute; a trav&eacute;s de los miembros del jurado del
+                    concurso. El proceso de selecci&oacute;n de los Participantes que califican se dividir&aacute; en tres (3) rondas, en las que
+                    se ir&aacute;n descalificando los participantes de menor puntuaci&oacute;n, hasta llegar al ganador, de la siguiente manera:</p>
+				<ol type="i" class="order-list">
+					<li><p><span class="bold">Semana 17 (Del 19 al 26 de Agosto):</span> Selecci&oacute;n de un m&aacute;ximo de 20 Participantes o
+						equipos de Participantes.</p></li>
+					<li><p><span class="bold">Semana 23 (Del 7 al 14 de Octubre):</span> Selecci&oacute;n de un m&aacute;ximo de 10 Participantes o
+						equipos de Participantes.</p></li>
+					<li><p><span class="bold">Semana 29 (Del 25 de Noviembre al 02 de Diciembre):</span> Selecci&oacute;n de los &uacute;ltimos 3
+						Participantes o equipos de Participantes que quedar&iacute;an en la final.</p></li>
+					<li><p><span class="bold">Semana 31 (Del 16 al 23 de Diciembre):</span> Elecci&oacute;n del Participante o equipo de
+						Participantes ganador.</p></li>
+				</ol>
+                <p>Nota Aclaratoria: Los participantes o equipos de participantes que califiquen para pasar a la
+                    ronda siguiente, deben comprometerse a presentar semanalmente &ldquo;Demos&rdquo; de su avance para ir
+                    siendo supervisados por los jurados y recibir retroalimentaci&oacute;n de su trabajo.</p>
+
+                <p>En el caso de los &uacute;ltimos 3 participantes o equipos de participantes que pasen a la final,
+                    deber&aacute;n asistir un fin de semana (viernes a domingo) a las instalaciones de Cincinnatus en la Ciudad de Santiago de Los Caballeros, para el cumplimiento de retos presenciales, elaborados por los
+                    jurados para el proceso de elecci&oacute;n final de ganadores.</p>
+                <p class="bold sub-title">7. JURADO CALIFICADOR</p>
+                <p>La responsabilidad de selecci&oacute;n de los ganadores recaer&aacute; sobre el jurado calificador
+                    que se encargar&aacute; de la selecci&oacute;n de las propuestas ganadoras. El mismo estar&aacute; conformado por:</p>
+				<ol type="i" class="order-list">
+					<li>Especialistas destacados en el &aacute;rea de programaci&oacute;n y tecnolog&iacute;a.</li>
+					<li>Especialistas funcionales en el &aacute;rea de gesti&oacute;n empresarial objeto de automatizaci&oacute;n.</li>
+					<li>Representante/s de los Centros Tecnol&oacute;gicos Comunitarios.</li>
+					<li>Representante/s de Intellisys D. Corp.</li>
+				</ol>
+                <p class="bold sub-title">8. PREMIOS:</p>
+                <p>El Concurso contar&aacute; con un solo premio para un &uacute;nico ganador, cuya base para ser
+                    elegido ser&aacute; la calidad de la aplicaci&oacute;n o sistema de gesti&oacute;n empresarial desarrollada, as&iacute; como
+                    que cumpla los criterios y requisitos establecidos en los presentes t&eacute;rminos y condiciones. El nombre del Participante
+                    o equipo de Participantes que resulte ganador ser&aacute; anunciado al final del concurso a trav&eacute;s del
+                    Peri&oacute;dico La Informaci&oacute;n y el Portal del Concurso.</p>
+                <p>El ganador recibir&aacute; como premio la suma de Un Mill&oacute;n de Pesos Dominicanos
+                    (RD$1,000,000.00), sujeto a los impuestos y grav&aacute;menes que apliquen.</p>
+                <p class="bold sub-title">9. VIGENCIA DEL CONCURSO:</p>
+
+                <p>La duraci&oacute;n del Concurso ser&aacute; de 31 semanas desde su lanzamiento. El desarrollo del
+                    Concurso durante este tiempo ser&aacute; de la siguiente manera:</p>
+				<ol type="I" class="order-list">
+					<li>
+						<span class="bold">Semana 1 a semana 10 (Del 1ro de Abril al 24 de Junio):</span>
+							<ul>
+								<li>Permitir la inscripci&oacute;n de estudiantes al Concurso.</li>
+								<li>Permitir la creaci&oacute;n de equipos.</li>
+								<li>Permitir el entrenamiento de los Participantes con informaci&oacute;n facilitada en el portal.</li>
+							</ul>
+					</li>
+					<li><span class="bold">Semana 11 a semana 14 - Primera fase (Del 24 de Junio al 29 de Julio):</span>
+						<ul>
+							<li>Descripci&oacute;n de la problem&aacute;tica a los Participantes.</li>
+							<li>4 semanas para el desarrollo de las propuestas por parte de todos los Participantes.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Semana 15 a semana 17 (Del 29 de Julio al 26 de Agosto):</span>
+						<ul>
+							<li>Revisi&oacute;n de las propuestas de todos los Participantes.</li>
+							<li>Selecci&oacute;n de los 20 Participantes y/o equipos participantes para inicio de la primera
+								ronda.</li>
+							<li>Actualizaci&oacute;n del portal con informaci&oacute;n de los 20 equipos seleccionados.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Semana 18 a semana 21 - Segunda fase (Del 26 de Agosto al 23 de Septiembre):</span>
+						<ul>
+							<li>4 semanas para el desarrollo de las propuestas por parte de los 20 Participantes y/o equipos participantes.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Semana 22 a semana 23 (Del 23 de Septiembre al 14 de Octubre):</span>
+						<ul>
+							<li>Revisi&oacute;n de las propuestas de los 20 Participantes y/o equipos de participantes.</li>
+							<li>Selecci&oacute;n de los 10 Participantes y/o equipos participantes que pasan a la segunda ronda.</li>
+							<li>Actualizaci&oacute;n del portal con informaci&oacute;n de los 10 equipos seleccionados.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Semana 24 a semana 27 - Tercera fase (Del 14 de Octubre al 18 de Noviembre):</span>
+						<ul>
+							<li>4 semanas para el desarrollo de las propuestas por parte de los 10 participantes y/o equipos participantes.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Semana 28 a semana 29 (Del 18 de Noviembre al 2 de Diciembre):</span>
+						<ul>
+							<li>Revisi&oacute;n de las propuestas de los 10 participantes y/o equipos de participantes.</li>
+							<li>Selecci&oacute;n de los 3 Participantes y/o equipos participantes que pasan a la tercera ronda.</li>
+							<li>Actualizaci&oacute;n del portal con informaci&oacute;n de los 3 equipos seleccionados.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Fin de Semana de 9, 10 y 11 de Diciembre:></span>
+						<ul>
+							<li>Fin de semana en Cincinnatus desarrollando diferentes retos presentados por los jueces para el proceso de evaluaci&oacute;n y selecci&oacute;n de ganador.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Semana 31 (Del 16 al 23 de Diciembre):</span>
+						<ul>
+							<li>Revisi&oacute;n de las propuestas de los 3 Participantes y/o equipos de participantes.</li>
+							<li>Selecci&oacute;n de propuesta ganadora.</li>
+						</ul>
+					</li>
+					<li><span class="bold">Mes de Enero:</span>
+						<ul>
+							<li>Evento de premiaci&oacute;n.</li>
+						</ul>
+					</li>
+				</ol>
+                <p class="bold sub-title">10. CONVENIO INTELLISYS/CTC PARA EL CONCURSO
+                <p>Los Centros Tecnol&oacute;gicos Comunitarios de la Republica Dominicana estar&aacute;n apoyando a
+                    los Organizadores en la realizaci&oacute;n del presente Concurso, a esos fines &eacute;stos ayudar&aacute;n a:</p>
+					<ol type="i" class="order-list">
+						<li>Facilitar sus instalaciones f&iacute;sicas en cada uno de los pueblos donde existan CTC y hayan Participantes</li>
+						<li>teresados en ser parte del Concurso. Los Participantes tendr&aacute;n la facilidad de entrenarse en el CTC m&aacute;s cercano y realizar el desarrollo de sus proyectos desde las mismas instalaciones.</li>
+						<li>Desarrollar, junto a los Organizadores la log&iacute;stica de comunicaci&oacute;n a nivel nacional para asegurar que la informaci&oacute;n del Concurso llegue a cada punto del pa&iacute;s donde puedan existir j&oacute;venes interesados en el &aacute;rea de Desarrollo de Software.</li>
+						<li>Desarrollar el papel de intermediario entre los Organizadores y las instituciones
+							gubernamentales que formar&aacute;n parte del desarrollo del proyecto por parte de los participantes, entre las que se encuentran la Tesorer&iacute;a de Seguridad Social (TSS), Direcci&oacute;n General de Impuestos
+							Internos (DGII) y el Instituto Nacional de Formaci&oacute;n T&eacute;cnico Profesional (INFOTEP).</li>
+					</ol>
+				</p>
+                <p class="bold sub-title">11. DERECHOS DE PROPIEDAD PRIVACIDAD. INTELECTUAL:
+					<ol type="i" class="order-list">
+						<li>Para participar en el Concurso, los Organizadores podr&aacute;n solicitar a los participantes el
+							facilitar informaci&oacute;n de car&aacute;cter personal con el prop&oacute;sito de utilizarla en sorteos u
+							otras actividades promocionales exclusivas de &ldquo;Intellisys Challenge&rdquo; y manejar&aacute;n toda la informaci&oacute;n
+							personal y privada de los Participantes acorde a la pol&iacute;tica local de privacidad y la ley No. 172-13,
+							de Protecci&oacute;n de Data Personal en la Rep&uacute;blica Dominicana.</li>
+						<li>Los Organizadores no ser&aacute;n responsables por cualquier uso indebido que terceros puedan
+							hacer de la informaci&oacute;n, a menos que sea por el resultado de una negligencia probada de los mismos Organizadores o cuando &eacute;sta haya sido objeto de intercepci&oacute;n o sustracci&oacute;n de
+							dicha informaci&oacute;n mediante una violaci&oacute;n de sus mecanismos de protecci&oacute;n y seguridad por parte de
+							terceros no autorizados.</li>
+						<li>La publicidad, los derechos de propiedad industrial y de autor de la actividad promocional,
+							son propiedad exclusiva de los Organizadores de conformidad con las disposiciones de la Ley No. 65-00 sobre Derechos de Autor.</li>
+						<li>Cualquier intromisi&oacute;n, tentativa o actividad violatoria o contraria a las leyes sobre
+							derecho de propiedad intelectual y/o a las prohibiciones estipuladas en este documento, har&aacute;n a las
+							personas que realicen y/o permitan y/o fomenten y/o incentiven la realizaci&oacute;n estos actos, sean
+							responsables por las violaciones cometidas, independientemente de la naturaleza jur&iacute;dica de dichas
+							infracciones, sean estas penales, administrativas y/o civiles. Asimismo estas personas ser&aacute;n responsables
+							de indemnizar a los Organizadores, y terceros afectados, por todos los da&ntilde;os ocasionados directa o indirectamente por estos hechos.</li>
+						<li>Los Participantes reconocen y aceptan que cualquier aplicaci&oacute;n, sistema de gesti&oacute;n
+							empresarial o producto desarrollado durante su participaci&oacute;n en el presente Concurso ser&aacute; propiedad
+							exclusiva de los Organizadores. En este sentido, mediante su participaci&oacute;n el o los Participantes aceptan
+							que los Organizadores o cualquier persona que estos designen ser&aacute;n los &uacute;nicos beneficiarios de
+							los derechos de propiedad intelectual o derechos de autor sobre los productos e ideas desarrollados en virtud
+							del presente concurso. En tal sentido, los Participantes, al inicio de su participaci&oacute;n y aceptaci&oacute;n
+							de los t&eacute;rminos y condiciones, se comprometen a firmar un documento mediante el cual otorgan el correspondiente descargo a favor de los Organizadores por cualquier derecho de propiedad intelectual o derecho de autor sobre el producto desarrollado, conforme a los presentes t&eacute;rminos y condiciones.</li>
+					</ol>
+				</p>
+                <p class="bold sub-title">12. DESCALIFICACION DEL GANADOR Y ELECCION DE UN GANADOR ALTERNO:</p>
+				 <p>En caso de que se constate que el o los Participantes o el Ganador del Concurso, haya
+					suministrado cualquier tipo de informaci&oacute;n falsa a los Organizadores: ya sea sobre la identidad o la
+					originalidad de su propuesta (tales como plagio en los c&oacute;digos) o de alguna forma infrinja los presentes t&eacute;rminos
+					y condiciones, el o los Participantes o el Ganador del Concurso ser&aacute; inmediatamente retirado
+					del Concurso. En caso de que se compruebe la falsedad o violaci&oacute;n a los presentes t&eacute;rminos
+					y condiciones, luego de ser electo un Participante como Ganador, los Organizadores elegir&aacute;n un ganador
+					alterno. Para fines de elegir un ganador alterno, se tendr&aacute; en cuenta la propuesta del finalista que mejor
+					se ajuste a los criterios de selecci&oacute;n especificados en la secci&oacute;n 6 de los presentes t&eacute;rminos
+					y condiciones, hasta tanto sea escogida una propuesta ganadora. El ganador alterno se har&aacute; de p&uacute;blico
+					conocimiento a trav&eacute;s del portal del concurso y sus redes sociales.</p>
+				<p class="bold sub-title">13. DISPOSICIONES GENERALES
+					<ol type="i" class="order-list">
+						<li>En virtud al principio de la autonom&iacute;a de la voluntad privada como fuente generadora de obligaciones entre los individuos, mediante la suscripci&oacute;n del presente documento, Los
+							Participantes manifiestan su consentimiento y aceptaci&oacute;n ante los t&eacute;rminos y condiciones, contenidos
+							en &eacute;ste, reconociendo que dicha aceptaci&oacute;n encierra y conlleva a la celebraci&oacute;n de un acuerdo
+							legal o contrato por adhesi&oacute;n, marco bajo el cual podr&aacute; accederse y hacer uso del portal Web as&iacute;
+							como de las redes sociales. Al aceptar los presentes t&eacute;rminos y condiciones el o los Participantes
+							reconocen que los Organizadores solo ser&aacute;n responsables de alteraciones que pueda sufrir el c&oacute;digo
+							de la soluci&oacute;n propuesta por los Participantes cuando sea resultado de una negligencia probada de
+							los Organizaciones</li>
+						<li>Los Organizadores no ser&aacute;n responsables de capturas de informaci&oacute;n incorrectas o
+							inexactas, fallas t&eacute;cnicas, humanas o errores t&eacute;cnicos, datos perdidos, demorados o confusos o
+							transmisiones, omisiones, interrupciones, supresiones, defectos o fallas en las l&iacute;neas telef&oacute;nicas, de
+							computadoras o redes, equipos de c&oacute;mputo, software, o cualquier combinaci&oacute;n de las arriba
+							mencionadas, a menos que sea resultado de una negligencia probada de los Organizadores. Los datos de los Participantes que hayan sido manipulados o alterados ser&aacute;n
+							inv&aacute;lidos.</li>
+						<li>Los Organizadores solo ser&aacute;n responsables de cualquier problema, error, negligencia que
+							pueda surgir u ocurrir en el acceso al registro de concurso cuando sea resultado de una negligencia probada de los Organizadores. No ser&aacute;n responsables en las conexiones de redes y dispositivos
+							que utilicen los interesados en participar en el Concurso para su registro, incluy&eacute;ndose de
+							manera enunciativa, mas no limitativa, computadoras, &ldquo;software&rdquo;, &ldquo;hardware&rdquo;,
+							tabletas, celulares, as&iacute; como cualquier tipo de aparato electr&oacute;nico que sea utilizado por el participante para su registro
+							en el Concurso.</li>
+						<li>No est&aacute; permitida ninguna acci&oacute;n, uso de dispositivo &quot;hardware&quot;, o
+							de programa &quot;software&quot;, o cualquier otro medio con el objeto a interferir tanto en las actividades y operaciones de los Organizadores.</li>
+						<li>Los Organizadores solo ser&aacute;n responsables por cualquier da&ntilde;o, perjuicio o p&eacute;rdida
+							a los participantes causados por fallas en el sistema o en el servidor de su p&aacute;gina de Internet
+							cuando estos sean resultado de una negligencia probada de los Organizaciones. Tampoco ser&aacute;n responsables por cualquier virus que pudiera infectar la(s) computadora(s) de los participantes como consecuencia del acceso o uso indebido a ra&iacute;z de cualquier transferencia de datos, archivos, im&aacute;genes, textos o audio contenidos en el mismo.</li>
+						<li>Los Organizadores podr&aacute;n demorar, terminar o enmendar este Concurso en cualquier
+							momento conforme al procedimiento establecido por la Resoluci&oacute;n No. 009.2011, sobre Regulaci&oacute;n
+							de Concursos, Rifas y Sorteos, emitida por el Consejo Directivo del Instituto Nacional de Protecci&oacute;n
+							a los Derechos del Consumidor en fecha veinte (20) de octubre del a&ntilde;o dos mil once (2011),En el
+							caso de que cualquier factor interfiera en el curso del mismo tal y como lo contemplan estas reglas, incluyendo, sin limitaci&oacute;n alguna, la participaci&oacute;n de personas domiciliadas fuera de
+							la jurisdicci&oacute;n de Rep&uacute;blica Dominicana, la ocurrencia de un fallo total o parcial en el sistema de inventario
+							de premios o cualquier componente relacionado o m&oacute;dulo: y, la interposici&oacute;n de una orden
+							por parte de cualquier autoridad gubernamental competente. A tales efectos, los organizadores proceder&aacute;n
+							a notificar al Instituto Nacional de Protecci&oacute;n de los Derechos del Consumidor, para fines
+							de aprobaci&oacute;n conforme lo establecido por la Resoluci&oacute;n No. 009.2011, sobre Regulaci&oacute;n
+							de Concursos, Rifas y Sorteos, emitida por el Consejo Directivo de dicha instituci&oacute;n, posteriormente lo
+							acontecido se dar&aacute; a conocer a trav&eacute;s de su cuenta oficial en twitter: @intellisys</li>
+						<li>El Concurso y sus reglas ser&aacute;n exclusivamente sujetas y determinadas de acuerdo a las
+							leyes vigentes en la Rep&uacute;blica Dominicana.</li>
+						<li>Los ganadores y acompa&ntilde;antes podr&aacute;n recibir instrucciones con relaci&oacute;n a las
+							obligaciones derivadas del premio, el incumplimiento de estas instrucciones podr&aacute; producir la descalificaci&oacute;n
+							de los ganadores, para esto un ganador alterno ser&aacute; electo de conformidad con los presentes t&eacute;rminos y condiciones.</li>
+						<li>Los Participantes reconocen y aceptan que no podr&aacute;n responsabilizar a los Organizadores
+							por cualquier p&eacute;rdida o da&ntilde;o personal o patrimonial, con excepci&oacute;n de las que fueran
+							causadas por probada negligencia de los Organizadores.</li>
+						<li>Si por alguna raz&oacute;n este Concurso no funciona de acuerdo a lo planeado, como consecuencia
+							de la ocurrencia de infecciones de virus de computadora, bugs, manipulaciones, intervenciones no autorizadas, fraude, fallas t&eacute;cnicas, guerra, terrorismo o cualquier otra causa fuera del
+							control de los Organizadores, que vicie o afecte la administraci&oacute;n de la seguridad, imparcialidad, integridad
+							o conducta apropiada de esta Concurso, los Organizadores podr&aacute;n cancelar, terminar, modificar
+							o suspender el Concurso sujet&aacute;ndose a la regulaci&oacute;n competente, as&iacute; como a
+							descalificar a cualquier participante que manipule el proceso de manejo de data. Las gestiones antes descritas,
+							ser&aacute;n realizadas conforme a las disposiciones de la Resoluci&oacute;n No. 009.2011, sobre Regulaci&oacute;n
+							de Concursos, Rifas y Sorteos, emitidas por el Consejo Directivo del Instituto Nacional de Protecci&oacute;n
+							de los Derechos del Consumidor.</li>
+						<li>Si alg&uacute;n juzgado con jurisdicci&oacute;n competente entiende que cualquier disposici&oacute;n
+							de estos t&eacute;rminos y condiciones es inv&aacute;lida, la invalidez de dicha disposici&oacute;n no afectar&aacute; la
+							validez de las restantes disposiciones, las cuales permanecer&aacute;n vigentes.</li>
+						<li>La publicidad, los derechos de propiedad industrial y de autor de la actividad promocional,
+							son propiedad exclusiva de Intellisys D&rsquo; Corp.</li>
+					</ol>
+				</p>
+            </article>
+        </section>
+    </div>
+    <div id="footer">
+        {% include "footer.html" %}
+    </div>
+</div>
+{% endblock %}

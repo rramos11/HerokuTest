@@ -1,0 +1,97 @@
+{% load staticfiles %}
+<div id="topBar">
+        <div class="container">
+            <ul class="top-links list-inline pull-right">
+                {% if  user.is_authenticated %}
+                    <li class="text-welcome"><a href="#">Bienvenido a Intellisys Challenge, <strong>{{ user }}</strong></a></li>
+                {% endif %}
+                <li>
+                    {% if not user.is_authenticated %}
+                        <a href="#">
+                            Iniciar sesión
+                        </a>
+                    {% else %}
+                        <a href="#">
+                            Cerrar sesión
+                        </a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div id="header" class="sticky clearfix {{ className }}">
+    <!-- Top Bar -->
+    <header id="topNav">
+        <div class="container">
+            <!-- Mobile Menu Button -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                <i class="fa fa-bars "></i>
+            </button>
+
+            <!-- Logo -->
+            <a class="logo pull-left" href="/">
+                <img src="{% static 'home/images/intellisys_challenge_small.png' %}" alt=""/> <!-- light logo -->
+                <img src="{% static 'home/images/intellisys_challenge_small.png' %}" alt=""/> <!-- dark logo -->
+            </a>
+
+            <div class="navbar-collapse pull-right nav-main-collapse collapse">
+                <nav class="nav-main">
+                    <ul id="topMain" class="nav nav-pills nav-main">
+                        <li>
+                            <a href="{% url 'home'%}">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0)">
+                                Material de apoyo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a  href="#">Entrenamiento</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0)">
+                                Bases y T&eacute;rminos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a  href="#">Bases</a>
+                                </li>
+                                <li>
+                                    <a  href="#">T&eacute;rminos y Condiciones</a>
+                                </li>
+                            </ul>
+                        </li>
+                        {% if not user.is_authenticated %}
+                            <li>
+                                <a href="#">
+                                    Inscripci&oacute;n
+                                </a>
+                            </li>
+                        {% endif %}
+                        <li>
+                            <a href="#">
+                                Cronograma
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Cont&aacute;ctanos
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+</div>

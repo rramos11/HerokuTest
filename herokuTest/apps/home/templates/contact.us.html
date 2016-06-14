@@ -1,0 +1,65 @@
+{% extends "emptyLayout.html" %}
+{% load staticfiles %}
+{% block mainContent %}
+<div id="wrapper">
+    {% include "topMenu.html" %}
+	<section class = "page-header">
+		<div class = "container">
+			<h1>
+				Cont&aacute;ctanos
+			</h1>
+			<ol class = "breadcrumb">
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li class="active" >
+					Cont&aacute;ctanos
+				</li>
+			</ol>
+		</div>
+	</section>
+	<div class = "container">
+		<form id="contact-form" class="sky-form boxed container" action="" method="post">
+			{% csrf_token %}
+
+			<fieldset class="nomargin">
+				<div class="col-md-8">
+					<h3>Formulario de contacto</h3>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-md-8">
+						<label for="name">Nombre: *</label>
+						{{form.name.errors}}
+						<input type="text" value="" class="form-control" name="name" id="name" placeholder="Ej: Jose Luis">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-8">
+						<label for="email">Email: *</label>
+						{{form.email.errors}}
+						<input type="text" value="" class="form-control" name="email" id="email"  placeholder="ejemplo@ejemplo.com">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-12">
+						<label for="message">Mensaje: *</label>
+						{{form.message.errors}}
+						<textarea maxlength="10000" rows="8" class="form-control" name="message" id="message"></textarea>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="row">
+				<div class="col-md-12">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+	{% include "footer.html" %}
+</div>
+{% endblock %}

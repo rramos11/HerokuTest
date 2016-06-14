@@ -1,0 +1,124 @@
+{% extends "emptyLayout.html" %}
+{% load staticfiles %}
+{% block customCSS %}
+<link href="{% static 'home/css/home.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block mainContent %}
+<div id="wrapper">
+    <div id="header" class="sticky clearfix">
+        {% include "topMenu.html" %}
+    </div>
+    <section class="page-header">
+        <div class="container">
+            <h1> Bases </h1>
+            <ol class="breadcrumb">
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li class="active">Bases</li>
+        </div>
+    </section>
+    <div class="container">
+        <section>
+            <article class="row">
+                <p class="bold text-center size-20">BASES DEL CONCURSO INTELLISYS CHALLENGE</p>
+
+                <p class="bold">SOBRE INTELLISYS CHALLENGE</p>
+
+                <p>Intellisys Challenge un concurso de programaci&oacute;n enfocado en el desarrollo de una aplicaci&oacute;n
+                    o sistema de gesti&oacute;n empresarial. Se dividir&aacute; en tres fases: de desarrollo, de
+                    aplicaci&oacute;n y de sistema de gesti&oacute;nempresarial. En cada fase los concursantes deber&aacute;n
+                    entregar
+                    una versi&oacute;n funcional
+                    del reto en cuesti&oacute;n, e igualmente, en cada una de ellas el jurado del certamen eliminar&aacute;
+                    candidatos teniendo en
+                    cuenta los criterios de selecci&oacute;n, hasta seleccionar una &uacute;nica propuesta ganadora.
+                    Aquellos
+                    que ofrezcan la mejor soluci&oacute;n obtendr&aacute;n un &uacute;nico premio monetario de
+                    RD$1,000,000.00 mientras
+                    que los dem&aacute;s concursantes ser&aacute;n tomados en cuenta y evaluados para determinarse la
+                    posibilidad de
+                    formar parte de la familia Intellisys como empleados. Para m&aacute;s informaci&oacute;n, consulta
+                    los <a href="{% url 'terminos' %}">T&eacute;rminos y Condiciones</a> del concurso</p>
+
+                <p class="bold">CONDICIONES PARA PARTICIPAR</p>
+                <ul>
+                    <li>Residir en la Rep&uacute;blica Dominicana.</li>
+
+                    <li>Tener entre 18 y 25 a&ntilde;os de edad.</li>
+
+                    <li>Poseer habilidades referentes al desarrollo de software.</li>
+
+                    <li> Presentarse como personas f&iacute;sicas y no como empresas o entes dedicadas al
+                        desarrollo de software.
+                    </li>
+
+                    <li>No pueden participar empleados actuales, representantes, mandatarios y agentes de
+                        los organizadores, o cualquier persona profesionalmente involucrada con este concurso. En
+                        tal sentido, no pueden participar personas que presten sus servicios como contratistas,
+                        suplidores, asalariados, ajusteros o personal intermitente, ni ning&uacute;n otro miembro
+                        del
+                        personal de los organizadores.
+                    </li>
+
+                    <li>No pueden participar familiares ni relacionados directos de empleados de los
+                        organizadores hasta un cuarto grado inclusive.
+                    </li>
+                </ul>
+
+                <p class="bold">PERFIL DE LOS PARTICIPANTES</p>
+
+                <p>La participaci&oacute;n puede ser individual o grupal, en este &uacute;ltimo caso conformado por
+                    un m&aacute;ximo de 5 personas.</p>
+
+                <p>Todos los Participantes deben estar dentro del perfil de estudiantes, siendo bachilleres,
+                    universitarios o tener un m&aacute;ximo de un (1) a&ntilde;o de graduados de la universidad. En
+                    caso de una
+                    participaci&oacute;n grupal, cada equipo debe identificar un representante que, m&aacute;s que
+                    el encargado de proyecto,
+                    funcione como enlace entre el equipo participante y los organizadores.</p>
+
+                <p class="bold">COMO PARTICIPAR</p>
+
+                <p>El d&iacute;a viernes 1ro de Abril del 2016, abrieron formalmente las inscripciones al Concurso,
+                    y se les envi&oacute; una notificaci&oacute;n por correo electr&oacute;nico a las personas que
+                    realizaron la
+                    Preinscripci&oacute;n para que procedan a inscribirse.</p>
+
+                <p>El proceso de inscripci&oacute;n del concurso, al igual que el de preinscripci&oacute;n, se
+                    realizar&aacute; v&iacute;a online en el portal del concurso intellisyschallenge.com, y estar&aacute;
+                    disponible durante dos meses y medio
+                    (10 semanas) a partir de la fecha de apertura oficial de las inscripciones, hasta el 23 de junio
+                    del
+                    2016. Para el registro de los Participantes estar&aacute; disponible en el portal un formulario
+                    de Inscripci&oacute;n
+                    d&oacute;nde los Participantes ingresar&aacute;n la informaci&oacute;n requerida, aceptando los
+                    t&eacute;rminos y
+                    condiciones del Intellisys Challenge. Para m&aacute;s informaci&oacute;n, consulta los <a href="{% url 'terminos' %}">T&eacute;rminos
+                        y Condiciones</a> del
+                    Concurso.</p>
+
+
+                <p class="bold">PREMIO</p>
+
+                <p>El Concurso contar&aacute; con un &uacute;nico premio para un solo ganador, cuya base para ser
+                    elegido ser&aacute; la calidad de la aplicaci&oacute;n o sistema de gesti&oacute;n empresarial
+                    desarrollada, as&iacute;
+                    como que cumpla los criterios y requisitos establecidos en los T&eacute;rminos y Condiciones del
+                    concurso. El nombre del
+                    Participante o equipo de Participantes que resulte ganador ser&aacute; anunciado al final del
+                    concurso a trav&eacute;s
+                    del Peri&oacute;dico La Informaci&oacute;n y el Portal del Concurso,
+                    intellisyschallenge.com.</p>
+
+                <p>El ganador recibir&aacute; como premio la suma de Un Mill&oacute;n de Pesos Dominicanos
+                    (RD$1,000,000.00), sujeto a los impuestos y grav&aacute;menes que apliquen. Para m&aacute;s
+                    informaci&oacute;n sobre el
+                    proceso de evaluaci&oacute;n y selecci&oacute;n de ganadores, consulta los <a href="{% url 'terminos' %}">T&eacute;rminos
+                        Condiciones</a> del Concurso.</p>
+            </article>
+        </section>
+    </div>
+    <div id="footer">
+        {% include "footer.html" %}
+    </div>
+</div>
+{% endblock %}

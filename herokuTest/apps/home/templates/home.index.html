@@ -1,0 +1,145 @@
+{% extends "emptyLayout.html" %}
+{% load staticfiles %}
+
+
+{% block customCSS %}
+<link href="{% static 'home/library/slider.revolution/css/extralayers.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'home/library/slider.revolution/css/settings.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'home/css/home.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+
+{% block mainContent %}
+<div id="wrapper" class="home-page">
+    
+    <section id="descriptive-section">
+        <div class="container">
+            <div class="text-center" style="font-size:36px">
+                <h2 class="col-sm-10 col-sm-offset-1">
+                    Fiebrú con la programaci&oacute;n. &#x2713;
+                </h2>
+                <h2 class="col-sm-10 col-sm-offset-1">
+                    18 a 25 a&ntilde;os. &#x2713;
+                </h2>
+                 <h2 class="col-sm-10 col-sm-offset-1">
+                    Tener t&iacute;tulo de bachiller. &#x2713;
+                </h2>
+                 <h2 class="col-sm-10 col-sm-offset-1">
+                    En caso de tener un grado universitario:
+                </h2>
+                <h2 class="col-sm-10 col-sm-offset-1">
+                    Menos de un a&ntilde;o de graduado. &#x2713;
+                </h2>
+                <h2 class="col-sm-10 col-sm-offset-1">
+                    ¿Te sientes identificado?
+                </h2>
+                <p class="col-sm-10 col-sm-offset-1 nomargin-bottom weight-400">
+                    Participa por la oportunidad de ganar RD$1,000,000.00 y formar parte de un “fiebr&uacute;” equipo de
+                    desarrollo de software.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <header class="text-center">
+                <h2 class="nomargin">¿Y ahora qu&eacute; hago?</h2>
+            </header>
+            <div class="divider divider-center divider-color">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="row">
+                <ul class="process-steps nav nav-justified">
+                    <li class="active col-sm-4">
+                        <a href="#"><i class="fa fa-sticky-note"></i></a>
+                        <h3>Bases y T&eacute;rminos</h3></br>
+                        <h5 class="instructions"> ¿Quieres tener m&aacute;s detalles sobre el IntelliSys Challenge? De
+                            qu&eacute; trata, quienes pueden participar, criterios de evaluaci&oacute;n, bases legales…
+                            Accede a la secci&oacute;n de Bases y T&eacute;rminos</h5>
+                    </li>
+                    <li class="active col-sm-4">
+                        <a href="#"><i class="icon-pencil"></i></a>
+                        <h3>Inscripci&oacute;n</h3></br>
+                        <h5 class="instructions"> Para registrarte en el IntelliSys Challenge y poder formar grupos,
+                            accede a la secci&oacute;n de <a href="#">Inscripci&oacute;n</a>.</h5>
+                    </li>
+                    <li class="active col-sm-4">
+                        <a href="#"><i class="fa fa-info"></i></a>
+                        <h3>Material de apoyo</h3></br>
+                        <h5 class="instructions"> Ten acceso al material de entrenamiento ofrecido por Cincinnatus.
+                            Accede a la secci&oacute;n de Material de apoyo.</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="row last-phase">
+                <ul class="process-steps nav nav-justified">
+                    <li class="active col-sm-6">
+                        <a href="#"><i class="fa fa-calendar"></i></a>
+                        <h3>Cronograma</h3></br>
+                        <h5 class="instructions"> Toda la informaci&oacute;n sobre fechas, fases y distribuci&oacute;n
+                            del tiempo en el IntelliSys Challenge. Accede a la secci&oacute;n de <a
+                                    href="#">Cronograma</a>.</h5>
+                    </li>
+                    <li class="active col-sm-6">
+                        <a href="#"><i class="fa fa-question"></i></a>
+                        <h3>FAQs</h3></br>
+                        <h5 class="instructions"> ¿Algo a&uacute;n no te queda claro? Accede a la secci&oacute;n de <a
+                                href="#">Preguntas Frecuentes</a>.</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <header class="text-center">
+                <h2 class="nomargin">Patrocinadores</h2>
+            </header>
+            <div class="divider divider-center divider-color">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="text-center">
+                        <a href="http://www.intellisysdcorp.com">
+                            <img class="sponsored-logo" src="{% static 'home/images/Intellisys.png' %}" alt=""/>
+                        </a>
+                        <h4>Intellisys D Corp.</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="text-center">
+                        <a href="http://www.cincinnatus.edu.do">
+                            <img class="sponsored-logo" src="{% static 'home/images/Cincinnatus.png' %}" alt=""/>
+                        </a>
+                        <h4>Cincinnatus</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="text-center">
+                        <a href="http://www.ctc.edu.do/">
+                            <img class="sponsored-logo" src="{% static 'home/images/Logo_CTC.png' %}" alt=""/>
+                        </a>
+                        <h4>Centros Tecnológicos Comunitarios.</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /FEATURED BOXES 3 -->
+        </div>
+    </section>
+</div>
+{% endblock %}
+<!-- REVOLUTION SLIDER -->
+{% block SLIDER %}
+
+{% endblock %}
+<!-- /REVOLUTION SLIDER -->
+
+{% block customJS %}
+<!-- REVOLUTION SLIDER -->
+<script type="text/javascript"
+        src="{% static 'home/library/slider.revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script type="text/javascript"
+        src="{% static 'home/library/slider.revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'home/js/demo.revolution_slider.js' %}"></script>
+{% endblock %}
