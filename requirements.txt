@@ -1,4 +1,4 @@
-
+adium-theme-ubuntu==0.3.4
 apt-xapian-index==0.45
 chardet==2.0.1
 colorama==0.2.5
