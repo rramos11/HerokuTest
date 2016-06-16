@@ -1,2 +1,1 @@
-web: gunicorn ic-test1.wsgi --log-file -
-web: python herokuTest/manage.py runserver
+web: gunicorn ic-test1.wsgi -b 0.0.0.0:$PORT
